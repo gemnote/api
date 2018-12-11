@@ -4,6 +4,9 @@
 * Retrieve a specific shipment `GET /api/v1/shipments/:shipment_id`  
 * Create a new shipment `POST /api/v1/shipments/`  
 
+### API domain
+`https://api.gemnote.com/`
+
 ### Authentication
 <!--We are using http authentication:   -->
 Add to http header key `AUTHORIZATION` with the value `Token xxxxxxxxxxxxxxxxxx`  
@@ -19,7 +22,7 @@ Options:
 * `page[size]`: integer
 
 example: 
-`GET /api/v1/shipments/?page[number]=1&page[size]=1`
+`GET https://api.gemnote.com/api/v1/shipments/?page[number]=1&page[size]=1`
 
 response:
 success with `200 OK`
@@ -71,7 +74,7 @@ success with `200 OK`
 `GET /api/v1/shipments/:shipment_id`
 
 example:
-`GET /api/v1/shipments/5`
+`GET https://api.gemnote.com/api/v1/shipments/5`
 
 response:
 success with `200 OK`
@@ -129,7 +132,7 @@ Options:
 * `messageLanguage`: optional - the gift's message language
 
 example:
-`POST /api/v1/shipments/`
+`POST https://api.gemnote.com/api/v1/shipments/`
 
 with `application/json` body
 ```

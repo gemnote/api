@@ -1,22 +1,29 @@
-Description
-GET /api/v1/shipments/
-GET /api/v1/shipments/:shipment_id
-POST /api/v1/shipments/
+## Gemnote API
+### Summary
+* Retrieve shipments `GET /api/v1/shipments/`  
+* Retrieve a specific shipment `GET /api/v1/shipments/:shipment_id`  
+* Create a new shipment `POST /api/v1/shipments/`  
 
-Authentication:
-We are using http authentication:
-Add header AUTHORIZATION with the value Token xxxxxxxxxxxxxxxxxx
+### Authentication
+<!--We are using http authentication:   -->
+Add to http header `AUTHORIZATION` with the value `Token xxxxxxxxxxxxxxxxxx`
 
-GET /api/v1/shipments/ => Get all shipments
-allowed params:
-page[number]: integer, page[size]: integer
+### Retrieve shipments API
 
-example:
-GET /api/v1/shipments/?page[number]=1&page[size]=1
+Retrieve shipments `GET /api/v1/shipments/` => Retrieves all shipments
+
+Options:  
+
+* `page[number]`: integer  
+* `page[size]`: integer
+
+example: 
+`GET /api/v1/shipments/?page[number]=1&page[size]=1`
 
 response:
-success with 200 OK
+success with `200 OK`
 
+```
 {
     "data": [
         {
@@ -56,15 +63,19 @@ success with 200 OK
         "totalItems": 7
     }
 }
-GET /api/v1/shipments/:shipment_id
-allowed params:
-None
+```
+
+### Retrieve a single shipment API
+
+`GET /api/v1/shipments/:shipment_id`
+
 example:
-GET /api/v1/shipments/5
+`GET /api/v1/shipments/5`
 
 response:
-success with 200 OK
+success with `200 OK`
 
+```
 {
     "data": {
         "id": "5",
@@ -91,30 +102,36 @@ success with 200 OK
         }
     }
 }
-POST /api/v1/shipments/
-allowed params:
-externalRecipientId : optional - the recipient id
-externalGiftId : required - the gift id
-recipientName: required - the recipient name
-recipientCompany: optional - the recipient company
-phone: optional - the recipient phone
-email: required - the recipient email
-addressOne: required - the recipient address1
-addressTwo: optional - the recipient address2
-city: required - the recipient city
-state: optional - the recipient state
-zipcode: optional - the recipient zipcode
-country: required - the recipient country
-fromName: optional - the sender's name
-fromEmail: optional - the sender's email
-message: optional - the gift's message
-messageLanguage: optional - the gift's message language
+```
 
-exmaple:
-POST /api/v1/shipments/
+### Create a new shipment
 
-with application/json body
+`POST /api/v1/shipments/` 
 
+Options:
+
+* `externalRecipientId` : optional - the recipient id 
+* `externalGiftId` :  required - the gift id
+* `recipientName`: required - the recipient name
+* `recipientCompany`:  optional - the recipient company
+* `phone`:  optional - the recipient phone
+* `email`: required - the recipient email
+* `addressOne`:  required - the recipient address1
+* `addressTwo`:  optional - the recipient address2
+* `city`:  required - the recipient city
+* `state`:  optional - the recipient state
+* `zipcode`:  optional - the recipient zipcode
+* `country`:  required - the recipient country
+* `fromName`: optional - the sender's name
+* `fromEmail`: optional - the sender's email
+* `message`: optional - the gift's message
+* `messageLanguage`: optional - the gift's message language
+
+example:
+`POST /api/v1/shipments/`
+
+with `application/json` body
+```
 {
     "data": {
         "attributes": {
@@ -137,9 +154,12 @@ with application/json body
         }
     }
 }
-response:
-success with 200 OK
+```
 
+response:
+success with `200 OK`
+
+```
 {
     "data": {
         "id": "13",
@@ -166,3 +186,4 @@ success with 200 OK
         }
     }
 }
+```

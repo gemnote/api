@@ -6,7 +6,8 @@
 
 ### Authentication
 <!--We are using http authentication:   -->
-Add to http header `AUTHORIZATION` with the value `Token xxxxxxxxxxxxxxxxxx`
+Add to http header key `AUTHORIZATION` with the value `Token xxxxxxxxxxxxxxxxxx`  
+Get this token from your Gemnote account manager.
 
 ### Retrieve shipments API
 

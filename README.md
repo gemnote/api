@@ -37,6 +37,8 @@ success with `200 OK`
                 "externalCompanyId": 123,
                 "externalRecipientId": 333,
                 "externalGiftId": 222,
+                "externalCardId": 2,
+                "qty": 1,
                 "recipientName": "Andy Liu",
                 "recipientCompany": "SingSing",
                 "phone": "123321234565",
@@ -88,6 +90,8 @@ success with `200 OK`
             "externalCompanyId": 123,
             "externalRecipientId": null,
             "externalGiftId": 200,
+            "externalCardId": 2,
+            "qty": 1,
             "recipientName": "Alonso Deckow",
             "recipientCompany": "Roob, Upton and Towne",
             "phone": "(348)743-2463 x0261",
@@ -115,7 +119,9 @@ success with `200 OK`
 Options:
 
 * `externalRecipientId` : optional - the recipient id 
-* `externalGiftId` :  required - the gift id
+* `externalGiftId`:  required - the gift id
+* `externalCardId`: optional - will use default card if not given
+* `qty`: required - quantity of the gift
 * `recipientName`: required - the recipient name
 * `recipientCompany`:  optional - the recipient company
 * `phone`:  optional - the recipient phone
@@ -141,6 +147,7 @@ with `application/json` body
         "attributes": {
             "externalRecipientId": null,
             "externalGiftId": 200,
+            "qty": 2,
             "recipientName": "Eric Chow",
             "recipientCompany": "Asana",
             "phone": "(123)333-4567 x123",
@@ -172,6 +179,8 @@ success with `200 OK`
             "externalCompanyId": 123,
             "externalRecipientId": null,
             "externalGiftId": 200,
+            "externalCardId": null,
+            "qty": 2,
             "recipientName": "Eric Chow",
             "recipientCompany": "Asana",
             "phone": "(123)333-4567 x123",

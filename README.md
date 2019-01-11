@@ -53,7 +53,9 @@ success with `200 OK`
                 "fromEmail": "leo@ggg.com",
                 "message": "Sing gift",
                 "messageLanguage": "EN",
-                "createdAt": "2018-12-08T00:52:17.512Z"
+                "createdAt": "2018-12-08T00:52:17.512Z",
+                "stage": "accepted",
+                "errorReason": null
             }
         }
     ],
@@ -106,7 +108,9 @@ success with `200 OK`
             "fromEmail": "brent.strosin@langoshpouros.biz",
             "message": "Iusto sint laudantium omnis unde sed quaerat cupiditate. Aut similique dolores aut dolor ut. Eum nobis est provident porro temporibus autem. Suscipit atque ipsum est quam quo.",
             "messageLanguage": "Georgian",
-            "createdAt": "2018-12-07T22:23:50.423Z"
+            "createdAt": "2018-12-07T22:23:50.423Z",
+            "stage": "accepted",
+            "errorReason": null
         }
     }
 }
@@ -131,7 +135,7 @@ Options:
 * `city`:  required - the recipient city
 * `state`:  optional - the recipient state
 * `zipcode`:  optional - the recipient zipcode
-* `country`:  required - the recipient country
+* `country`:  required - the recipient country, accpet ISO3166 country alpha2 or alpha3 or name
 * `fromName`: optional - the sender's name
 * `fromEmail`: optional - the sender's email
 * `message`: optional - the gift's message
@@ -195,7 +199,9 @@ success with `200 OK`
             "fromEmail": "alex@gemnote.com",
             "message": "Gift for u",
             "messageLanguage": "en",
-            "createdAt": "2018-12-10T21:43:14.917Z"
+            "createdAt": "2018-12-10T21:43:14.917Z",
+            "stage": "pending",
+            "errorReason": null
         }
     }
 }

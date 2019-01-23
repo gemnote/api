@@ -128,7 +128,7 @@ Options:
 * `qty`: required - quantity of the gift
 * `recipientName`: required - the recipient name
 * `recipientCompany`:  optional - the recipient company
-* `phone`:  optional - the recipient phone
+* `phone`:  required (optional for USA shipments) - the recipient phone
 * `email`: required - the recipient email
 * `addressOne`:  required - the recipient address1
 * `addressTwo`:  optional - the recipient address2

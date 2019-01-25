@@ -4,14 +4,6 @@
 * Retrieve a specific shipment `GET /api/v1/shipments/:shipment_id`  
 * Create a new shipment `POST /api/v1/shipments/`  
 
-### API domain
-`https://api.gemnote.com/`
-
-### Authentication
-<!--We are using http authentication:   -->
-Add to http header key `AUTHORIZATION` with the value `Token xxxxxxxxxxxxxxxxxx`  
-Get this token from your Gemnote account manager.
-
 ### Retrieve shipments API
 
 Retrieve shipments `GET /api/v1/shipments/` => Retrieves all shipments

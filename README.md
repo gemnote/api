@@ -17,7 +17,7 @@ Get this token from your Gemnote account manager.
 * All production key will start with `p_` prefix. e.g. `p_xxxxxxxxxxxxxxxxxxx`
 
 ### Sandbox Environment 
-All shipments on the sandbox server will leave the stage with `pending` and will not affect production data. 
+All data changes on the sandbox server will not affect production data. 
 
 ### Retrieve resources from API
 * [Shipment API](https://github.com/gemnote/api/blob/master/shipment.md)

@@ -19,7 +19,7 @@ Get this token from your Gemnote account manager.
 ### Sandbox Environment 
 All data changes on the sandbox server will not affect production data. 
 
-### Retrieve resources from API
+### Resources
 * [Shipment API](https://github.com/gemnote/api/blob/master/shipment.md)
 * [Gift API](https://github.com/gemnote/api/blob/master/gift.md)
 * [Postcard API](https://github.com/gemnote/api/blob/master/postcard.md)

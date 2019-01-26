@@ -3,7 +3,7 @@
 * Retrieve gifts `GET /api/v1/gifts/`  
 * Retrieve a specific gift `GET /api/v1/gifts/:gift_id`  
 
-### Retrieve gifts API
+### Retrieve gifts
 
 Retrieve gifts `GET /api/v1/gifts/` => Retrieves all gifts
 
@@ -43,7 +43,7 @@ success with `200 OK`
 }
 ```
 
-### Retrieve a single gift API
+### Retrieve a single gift
 
 `GET /api/v1/gifts/:gift_id`
 

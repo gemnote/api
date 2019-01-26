@@ -3,7 +3,7 @@
 * Retrieve greeting cards `GET /api/v1/greeting_cards/`  
 * Retrieve a specific greeting card `GET /api/v1/greeting_cards/:greeting_card_id`  
 
-### Retrieve greeting cards API
+### Retrieve greeting cards
 
 Retrieve greeting cards `GET /api/v1/greeting_cards/` => Retrieves all greeting cards
 
@@ -43,7 +43,7 @@ success with `200 OK`
 }
 ```
 
-### Retrieve a single greeting card API
+### Retrieve a single greeting card
 
 `GET /api/v1/greeting_cards/:greeting_card_id`
 

@@ -4,7 +4,7 @@
 * Retrieve a specific shipment `GET /api/v1/shipments/:shipment_id`  
 * Create a new shipment `POST /api/v1/shipments/`  
 
-### Retrieve shipments API
+### Retrieve shipments
 
 Retrieve shipments `GET /api/v1/shipments/` => Retrieves all shipments
 
@@ -81,7 +81,7 @@ success with `200 OK`
 }
 ```
 
-### Retrieve a single shipment API
+### Retrieve a single shipment
 
 `GET /api/v1/shipments/:shipment_id`
 

@@ -22,4 +22,4 @@ All data changes on the sandbox server will not affect production data.
 ### Resources
 * [Shipment API](https://github.com/gemnote/api/blob/master/shipment.md)
 * [Gift API](https://github.com/gemnote/api/blob/master/gift.md)
-* [Postcard API](https://github.com/gemnote/api/blob/master/postcard.md)
+* [GreetingCard API](https://github.com/gemnote/api/blob/master/greeting_card.md)

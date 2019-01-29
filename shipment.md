@@ -168,7 +168,7 @@ success with `200 OK`
 Options:
 
 * `giftId`:  required - the gift id
-* `postcardId`: optional - will use default card if not given
+* `greetingCardId`: optional - will use default card if not given
 * `qty`: required - quantity of the gift
 * `recipientName`: required - the recipient name
 * `recipientCompany`:  optional - the recipient company
@@ -205,7 +205,7 @@ with `application/json` body
             "city": "Santa Clara",
             "state": "CA",
             "zipcode": "95050",
-            "country": "United State",
+            "country": "United States",
             "fromName": "alex Chen",
             "fromEmail": "alex@gemnote.com",
             "message": "Gift for u",

@@ -106,7 +106,7 @@ success with `200 OK`
         "attributes": {
             "companyId": 3,
             "giftId": 1,
-            "postcardId": 2,
+            "greetingCardId": 2,
             "qty": 1,
             "recipientName": "Alonso Deckow",
             "recipientCompany": "Roob, Upton and Towne",
@@ -134,10 +134,10 @@ success with `200 OK`
                     "type": "gifts"
                 }
             },
-            "postcard": {
+            "greetingCard": {
                 "data": {
                     "id": "2",
-                    "type": "postcards"
+                    "type": "greetingCards"
                 }
             }
         }

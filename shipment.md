@@ -31,7 +31,7 @@ success with `200 OK`
             "attributes": {
                 "companyId": 3,
                 "giftId": 1,
-                "postcardId": 2,
+                "greetingCardId": 2,
                 "qty": 1,
                 "recipientName": "Andy Liu",
                 "recipientCompany": "SingSing",
